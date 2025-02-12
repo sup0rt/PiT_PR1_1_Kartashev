@@ -25,6 +25,7 @@ namespace fibon
             return n == 0 ? n1 : n2;
         }
         static void Main(string[] args)
+        
         {
             int result = Fibonacci(5);
             Console.WriteLine(result);
