@@ -21,6 +21,7 @@ namespace fibon
                 n2 = sum;
             }
 
+
             return n == 0 ? n1 : n2;
         }
         static void Main(string[] args)
