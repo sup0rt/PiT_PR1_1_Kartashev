@@ -38,6 +38,6 @@
 Пример расчеты силы тока
 ![тут должна быть картинка  как оно считает](https://github.com/sup0rt/PiT_PR1_1_Kartashev/blob/master/%D1%81%D0%BA%D1%80%D0%B8%D0%BD%D1%8B/%D1%81%D0%B8%D0%BB%D0%B0.png)
 Пример расчета сопротивления
-![тут должна быть картинка  как оно считает]()
+![тут должна быть картинка  как оно считает](https://github.com/sup0rt/PiT_PR1_1_Kartashev/blob/master/%D1%81%D0%BA%D1%80%D0%B8%D0%BD%D1%8B/%D1%81%D0%B8%D0%BB%D0%B0.png)
 Пример обработки неправильного ввода
 ![тут должна быть картинка  как оно обрабатывает ошибку](https://github.com/sup0rt/PiT_PR1_1_Kartashev/blob/master/%D1%81%D0%BA%D1%80%D0%B8%D0%BD%D1%8B/%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D0%B0.png)
