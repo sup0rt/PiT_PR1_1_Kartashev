@@ -57,23 +57,23 @@ namespace PR3part2
             }
         }
 
-        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        
+        private void power_Checked(object sender, RoutedEventArgs e)
         {
-            if (power.IsChecked == true)
-            {
-                lblVolt.Content = "Напряжение (Вольт):";
-                lblOm.Content = "Сопротивление (Ом):";
-            }
-            else if (voltage.IsChecked == true)
-            {
-                lblVolt.Content = "Сила тока (Ампер):";
-                lblOm.Content = "Сопротивление (Ом):";
-            }
-            else if (resist.IsChecked == true)
-            {
-                lblVolt.Content = "Напряжение (Вольт):";
-                lblOm.Content = "Сила тока (Ампер):";
-            }
+            lblVolt.Content = "Напряжение (Вольт):";
+            lblOm.Content = "Сопротивление (Ом):";
+        }
+
+        private void voltage_Checked(object sender, RoutedEventArgs e)
+        {
+            lblVolt.Content = "Сила тока (Ампер):";
+            lblOm.Content = "Сопротивление (Ом):";
+        }
+
+        private void resist_Checked(object sender, RoutedEventArgs e)
+        {
+            lblVolt.Content = "Напряжение (Вольт):";
+            lblOm.Content = "Сила тока (Ампер):";
         }
     }
 }

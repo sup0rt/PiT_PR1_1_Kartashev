@@ -28,9 +28,9 @@
         <Label x:Name="answer" Content="Сила тока: " Grid.Row="4" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
         <StackPanel Grid.Row="1" Grid.Column="2" Grid.RowSpan="3" HorizontalAlignment="Left" VerticalAlignment="Center">
-            <RadioButton x:Name="power" Content="Сила тока" />
-            <RadioButton x:Name="voltage" Content="Напряжение" />
-            <RadioButton x:Name="resist" Content="Сопротивление" />
+            <RadioButton x:Name="power" Content="Сила тока" Checked="power_Checked" />
+            <RadioButton x:Name="voltage" Content="Напряжение" Checked="voltage_Checked" />
+            <RadioButton x:Name="resist" Content="Сопротивление" Checked="resist_Checked" />
         </StackPanel>
 
         <TextBox x:Name="volt" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" MinWidth="100" />
