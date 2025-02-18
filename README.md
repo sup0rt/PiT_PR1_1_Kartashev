@@ -15,7 +15,7 @@
 ### Галлактики
 Теоретические сведения и исходный код программы были взяты из [этого](https://learn.microsoft.com/ru-ru/training/modules/dotnet-) источника
 
-Файл программы расположен [здесь](https://github.com/sup0rt/PiT_PR1_1_Kartashev/blob/master/galaxies/galaxies.sln)
+Файл программы расположен [здесь](PR3part1/galaxies)
 
 При отладке были использованы такие средства/методы:
 - отладчик MS Visual Studio
