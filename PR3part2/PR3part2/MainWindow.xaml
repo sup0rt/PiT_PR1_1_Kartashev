@@ -23,9 +23,9 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <Label Content="Напряжение (Вольт)" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
-        <Label Content="Сопротивление (Ом)" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
-        <Label Content="Сила тока: " Grid.Row="4" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label x:Name="lblVolt" Content="Напряжение (Вольт)" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        <Label x:Name="lblOm" Content="Сопротивление (Ом)" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        <Label x:Name="answer" Content="Сила тока: " Grid.Row="4" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
         <StackPanel Grid.Row="1" Grid.Column="2" Grid.RowSpan="3" HorizontalAlignment="Left" VerticalAlignment="Center">
             <RadioButton x:Name="power" Content="Сила тока" />
@@ -36,6 +36,6 @@
         <TextBox x:Name="volt" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" MinWidth="100" />
         <TextBox x:Name="om" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" MinWidth="100" />
 
-        <Button x:Name="calculate" Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" Content="Вычислить" />
+        <Button x:Name="calculate" Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" Content="Вычислить" Click="calculate_Click" />
     </Grid>
 </Window>

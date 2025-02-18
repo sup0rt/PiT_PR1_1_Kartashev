@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -20,9 +21,59 @@ namespace PR3part2
     /// </summary>
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void calculate_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                double result = 0;
+                double value1 = double.Parse(volt.Text);
+                double value2 = double.Parse(om.Text);
+
+                if (power.IsChecked == true) 
+                {
+                    result = value1 / value2;
+                    answer.Content = $"Сила тока = {result:F2} A";
+                }
+                else if (voltage.IsChecked == true)
+                {
+                    result = value1 * value2;
+                    answer.Content = $"Напряжение = {result:F2} V";
+                }
+                else if (resist.IsChecked == true)
+                {
+                    result = value1 / value2;
+                    answer.Content = $"Сопротивление = {result:F2} Ω";
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Ошибка ввода данных! Убедитесь, что введены корректные числа.", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            if (power.IsChecked == true)
+            {
+                lblVolt.Content = "Напряжение (Вольт):";
+                lblOm.Content = "Сопротивление (Ом):";
+            }
+            else if (voltage.IsChecked == true)
+            {
+                lblVolt.Content = "Сила тока (Ампер):";
+                lblOm.Content = "Сопротивление (Ом):";
+            }
+            else if (resist.IsChecked == true)
+            {
+                lblVolt.Content = "Напряжение (Вольт):";
+                lblOm.Content = "Сила тока (Ампер):";
+            }
         }
     }
 }
